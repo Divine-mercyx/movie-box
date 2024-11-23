@@ -1,0 +1,28 @@
+.form {
+    width: 460px;
+}
+
+
+.form-control {
+    border-radius: 50px;
+    position: relative;
+    left: 10px;
+}
+
+.input-group {
+    border-radius: 50%;
+}
+
+
+.btn-outline-info {
+    border-radius: 25px;
+}
+
+.btn-info {
+    border-radius: 50%;
+    position: relative;
+    left: 370px;
+    bottom: 76px;
+    width: 70px;
+    height: 70px;
+}
