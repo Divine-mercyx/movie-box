@@ -31,7 +31,7 @@ const App = () => {
      <div className="row">
        {theshows.map((data) => {
          return (
-           <div className="col-lg-3" key={data.id}>
+           <div className="col-lg-3 card-container" key={data.id}>
              <div className="border border-dark p-1 mt-3 container">
                <img alt='nothing' className='container-fluid' src={`https://image.tmdb.org/t/p/w500${data?.poster_path}`} />
                <p className='text-light mt-2 text-center'><b>Title:</b> <a href='' className='text-light text-decoration-none'>{ data.title } ({ data.release_date })</a></p>               
