@@ -31,10 +31,20 @@ const App = () => {
      <div className="row">
        {theshows.map((data) => {
          return (
-           <div className="col-lg-3 card-container" key={data.id}>
-             <div className="border border-dark p-1 mt-3 container">
+           <div className="col-lg-3 movie card-container" key={data.id}>
+             <div className="mb-4 p-1 box container">
                <img alt='nothing' className='container-fluid' src={`https://image.tmdb.org/t/p/w500${data?.poster_path}`} />
-               <p className='text-light mt-2 text-center'><b>Title:</b> <a href='' className='text-light text-decoration-none'>{ data.title } ({ data.release_date })</a></p>               
+               <p className='text-light p-3 mt-2 text-center'>
+                <b>Title:</b> <a href='' className='text-light text-decoration-none'>
+                  { data.title } ({ data.release_date })
+                  </a>
+                </p> 
+                <div className='overview container p-2'>
+                  <h5 className='text-warning'>Overview</h5>
+                  <p className='text-secondary'>
+                    { data.overview }
+                  </p>
+                </div>              
              </div>
            </div>
          );

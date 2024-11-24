@@ -50,3 +50,27 @@
 .card-container:hover {
   transform: scale(1.05);
 }
+
+.box {
+
+  background-color: #00000058;
+  border-radius: 10px;
+}
+
+.overview {
+  position: absolute;
+  width: 260px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000d4;
+  max-heght: 100%;
+  transform: translateY(101%);
+  opacity: 0;
+  transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+  opacity: 1;
+}
